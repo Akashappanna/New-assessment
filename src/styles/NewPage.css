@@ -1,0 +1,143 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.dashboard {
+  height: 100vh;
+  width: 100%;
+  outline: double;
+  overflow: scroll;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #ddd9f7a8;
+}
+
+.dashboard-header > button {
+  border:none;
+  outline:none;
+  width: 20%;
+  background-color: initial;
+  font-size: 20px;
+  color: blue;
+  padding:10px;
+}
+.dashboard-header > button .left-arrow {
+  float: left;
+}
+.dashboard-header > button .right-arrow {
+  float: right;
+}
+
+.dashboard-header > .current-data {
+  width: 60%;
+  text-align: start;
+}
+
+.timeZone-section {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #ddd9f7a8;
+}
+.timeZone-section h3 {
+  width: 100%;
+  padding: 10px;
+  text-align: start;
+  background-color: #eeeeff;
+}
+.timeZone-section select {
+  width: 100%;
+  padding: 20px;
+  text-align: start;
+  background-color: white;
+  outline: none;
+}
+
+.dashboard-main {
+  padding: 20px 10px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #ddd9f7a8;
+}
+
+.dashboard-sub-main {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  margin: 20px 0px;
+  padding: 20px 0px;
+  background-color: #ffffffa8;
+}
+.dashboard-sub-main .dashboard-Days {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10%;
+  /* height: 100px; */
+  border-right: 1px solid black;
+}
+.dashboard-sub-main .dashboard-time {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  padding: 20px;
+}
+
+.dashboard-sub-main .dashboard-time input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  /* display: none; */
+}
+.dashboard-sub-main .dashboard-time label {
+  padding: 0px 5px;
+}
+
+.time-List {
+  width: 14%;
+  padding: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+/* .dashboard-sub-main .dashboard-time input[type="checkbox"] + *::before {
+  content: "";
+  display: inline-block;
+  vertical-align: bottom;
+  width: 20px;
+  height: 20px;
+  border-radius: 10%;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #7561e282;
+  cursor: pointer;
+}
+.dashboard-sub-main .dashboard-time input[type="checkbox"]:checked + *::before {
+  content: "✓";
+  color: white;
+  text-align: center;
+  background: teal;
+  border-color: teal;
+}
+.dashboard-sub-main .dashboard-time input[type="checkbox"]:checked + * {
+  color: teal;
+} */
